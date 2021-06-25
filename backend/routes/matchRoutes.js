@@ -8,7 +8,7 @@ import {
   // updateProduct,
   // createProductReview,
   // getTopProducts,
-} from '../controllers/productController.js'
+} from '../controllers/matchController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
 router.route('/').get(getMatches).post(protect, admin, createMatch)
